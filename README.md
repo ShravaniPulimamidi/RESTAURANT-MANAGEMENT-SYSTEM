@@ -1,5 +1,5 @@
 # RESTAURANT-MANAGEMENT-SYSTEM
-#Our software helps the management
+**#Our software helps the management
  department to manage and maintain the
  records of customers, food and the other
  bills of the restaurant much easier and
@@ -18,3 +18,4 @@
  #Our software is laidback and can be accessed
  by employees and users.
  
+**
