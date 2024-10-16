@@ -81,7 +81,8 @@ text, ct text,sb text,tax text,sr text,tot text)")
    # rightframe
     rightframe = Frame(root, width=400, height=700)
     rightframe.pack(side=RIGHT)
-################## display data ####################
+
+ ################## display data ####################
     def DisplayData():
         Database()
         my_tree.delete(*my_tree.get_children())
@@ -95,10 +96,11 @@ text, ct text,sb text,tax text,sr text,tot text)")
     style.configure("Treeview",
                     foreground="black", rowheight=40, fieldbackground="white")
     style.map('Treeview',background=[('selected', 'lightblue')])
-###########  Creating table #############
+
+  ###########  Creating table #############
     my_tree = ttk.Treeview(rightframe)
     my_tree['columns'] = ("ordno", "piz", "bur", "ice", "dr", "ct", "sb", "tax", "sr", "tot")
-############ creating  for table ################
+  ############ creating  for table ################
     horizontal_bar = ttk.Scrollbar(rightframe, orient="horizontal")
     horizontal_bar.configure(command=my_tree.xview)
     my_tree.configure(xscrollcommand=horizontal_bar.set)
