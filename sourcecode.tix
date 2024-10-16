@@ -95,10 +95,10 @@ text, ct text,sb text,tax text,sr text,tot text)")
     style.configure("Treeview",
                     foreground="black", rowheight=40, fieldbackground="white")
     style.map('Treeview',background=[('selected', 'lightblue')])
-    ###########  Creating table #############
+###########  Creating table #############
     my_tree = ttk.Treeview(rightframe)
     my_tree['columns'] = ("ordno", "piz", "bur", "ice", "dr", "ct", "sb", "tax", "sr", "tot")
-    ############ creating  for table ################
+############ creating  for table ################
     horizontal_bar = ttk.Scrollbar(rightframe, orient="horizontal")
     horizontal_bar.configure(command=my_tree.xview)
     my_tree.configure(xscrollcommand=horizontal_bar.set)
@@ -273,7 +273,7 @@ bd=3, padx=5, pady=5,
     deletebtn = Button(leftframe, font=('Calibri', 16, 'bold'), text="Delete Record", bg="lightgrey", 
 fg="black", bd=3,
                        padx=5, pady=5, width=12, command=Delete).grid(row=4, column=2)
-    ########################### feedback form ################################
+########################### feedback form ################################
     def feedbackk():
         feed = Tk()
         feed.geometry("600x500")
